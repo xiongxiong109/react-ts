@@ -1,4 +1,5 @@
 import * as React from 'react'
+import './hello.css'
 
 interface Iprops {
   nm: string;
@@ -22,7 +23,7 @@ class Hello extends React.Component<Iprops, object> {
   public render() {
     const { nm, age } = this.props;
     return (
-      <div>
+      <div className="hello">
         <p>hello, {nm}</p>
         {
           age
